@@ -49,7 +49,7 @@ function guess () {
     // validation
     if (attempts >= maxAttempts && userGuess != result) {
         message.innerText = `❌ Game Over! The number was ${result}.`;
-        message.style.color = "red";
+        message.style.color = "#b60707ff";
         submit.innerHTML = "Start Over!";
         endGame();
     return;
@@ -62,7 +62,7 @@ function guess () {
          submit.innerHTML = "Try Again!";
 
     } else if (userGuess < result) {
-        message.innerText = `🙄 Too high! Attempts left: ${maxAttempts - attempts}`;
+        message.innerText = `🙄 Too low! Attempts left: ${maxAttempts - attempts}`;
         message.style.color = "#b60707ff";
         submit.innerHTML = "Try Again!";
     
