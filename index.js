@@ -67,7 +67,7 @@ function guess () {
         submit.innerHTML = "Try Again!";
     
     } else {
-        message.innerText = `🎉 Correct! The number was ${result}. You guessed it in ${attempts} attempts`
+        message.innerText = `🎉 Awesome! You nailed it — the secret number was ${result}. You got it in just ${attempts} attempts!`
         message.style.color = "#130f0fff"
         submit.innerHTML = "Start Over!"
         endGame()
