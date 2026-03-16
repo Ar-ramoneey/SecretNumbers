@@ -13,7 +13,7 @@ function randomNumber() {
   return Math.floor(Math.random() * 10) + 1;
 }
 
-// Reset and Add event listener function
+// Reset and Add event listener function  
 function endGame() {
   submit.removeEventListener("click", guess);
   submit.addEventListener("click", resetGame);
